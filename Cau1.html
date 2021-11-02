@@ -10,6 +10,8 @@
     function solveSimpleEquation(a, b) {
         if (a === 0) {
             alert('Phương trình vô nghiệm');
+        } else if (a === 0 && b === 0) {
+            alert("Phương trình vô số nghiệm");
         } else {
             alert('Nghiệm của phương trình là' + ' ' + -b / a);
             return -b / a;
