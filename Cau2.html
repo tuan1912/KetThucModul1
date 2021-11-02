@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu 2</title>
+</head>
+<body>
+<script>
+
+    function findIndexOfElement(element, arr) {
+        let check = true;
+        for (let i = 0; i < arr.length; i++) {
+            if (element === arr[i]) {
+                alert(element + ' ' + 'thuộc mảng cho trước');
+                return i;
+            } else {
+                check = false;
+            }
+        }
+        if (!check) {
+            alert(element + ' ' + 'không thuộc mảng cho trước');
+        }
+    }
+
+    let arrExample = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    let inputNumber = +prompt("nhập vào một số:")
+    findIndexOfElement(inputNumber, arrExample);
+
+</script>
+</body>
+</html>
